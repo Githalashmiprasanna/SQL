@@ -1,4 +1,5 @@
 select  * from customers
+--New change is made
 
 --system functions ...min max......
 
