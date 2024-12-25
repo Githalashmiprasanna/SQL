@@ -1,0 +1,3 @@
+--temporal tables
+
+--CREATE TABLE dbo.Employee_Details (--    [EmployeeID] INT NOT NULL PRIMARY KEY CLUSTERED,--    [Name] NVARCHAR(100) NOT NULL,--    [Position] VARCHAR(100) NOT NULL,--    [Department] VARCHAR(100) NOT NULL,--    [Address] NVARCHAR(1024) NOT NULL,--    [AnnualSalary] DECIMAL(10, 2) NOT NULL,--    [ValidFrom] DATETIME2 GENERATED ALWAYS AS ROW START,--    [ValidTo] DATETIME2 GENERATED ALWAYS AS ROW END,--    PERIOD FOR SYSTEM_TIME(ValidFrom, ValidTo)--)--WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE = dbo.EmployeeHistory));select * from Employee_Detailsupdate Employee_Details  set department='auto'select * from EmployeeHistory
