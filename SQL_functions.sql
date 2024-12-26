@@ -1,6 +1,8 @@
 select  * from customers
 --New change is made
 
+-- changes from dev branch
+
 --system functions ...min max......
 
 -- user defined functions - accept zero or more  parameters 
@@ -68,7 +70,14 @@ select  * from customers
 
 
 ---sscalar function
-CREATE FUNCTION CalculateCircleArea (@Radius FLOAT)RETURNS FLOATASBEGIN    DECLARE @Area FLOAT    SET @Area = PI() * POWER(@Radius, 2)    RETURN @AreaEND
+CREATE FUNCTION CalculateCircleArea (@Radius FLOAT)
+RETURNS FLOAT
+AS
+BEGIN
+    DECLARE @Area FLOAT
+    SET @Area = PI() * POWER(@Radius, 2)
+    RETURN @Area
+END
 
 
 select dbo.CalculateCircleArea(1.2)
